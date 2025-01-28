@@ -12,7 +12,7 @@
 	<artifactId>subleasefinder</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>subleasefinder</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Spring Boot backend for Sublease Finder</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -30,11 +30,6 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.mongodb</groupId>
-			<artifactId>mongodb-driver-sync</artifactId>
-			<version>5.3.0</version>
-    	</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
