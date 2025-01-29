@@ -7,9 +7,15 @@ import org.springframework.stereotype.Service;
 
 import com.sublease.subleasefinder.models.Lease;
 
+import com.mongodb.client.MongoDatabase;
+
 @Service
 public class LeaseService {
     private List<Lease> leases = new ArrayList<Lease>();
+
+    public LeaseService(){
+        MongoDatabase db = MongoDBConnection.getDb();
+    }
 
     public void addLease(Lease lease) {
         leases.add(lease);
